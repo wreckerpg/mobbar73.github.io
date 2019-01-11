@@ -1,0 +1,478 @@
+html, body {
+	margin: 0;
+	padding: 0;
+    height: 100%;
+    width: 100%;
+}
+body {
+	font-family: "Aldine721BT-Light", Georgia, serif;
+	font-size: 16px;
+	line-height: 1.45em;
+	font-weight: normal;
+}
+
+html >/**/ body {
+	overflow: auto;
+	overflow-y: scroll;
+}
+
+.wrap1 {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+.wrap2 {
+	display: table-row;
+}
+#borderWrapper {
+    display: table-cell;
+    border: 10px solid  #313131;
+	background: url(images/BG.jpg) white;
+	position: relative;
+}
+
+.centerContent {
+	width: 960px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+
+.hideOverflow {
+	overflow: hidden;
+}
+.floatLeft {
+	float: left;
+}
+.floatRight {
+	float: right;
+}
+.centerText {
+	text-align: center;
+}
+.underline {
+	text-decoration: underline;
+}
+
+
+.fullWidth {
+	width: 100%;
+}
+.halfWidth {
+	width: 50%;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+ul li {
+	float: left;
+	margin: 0 0 0 58px;
+}
+ul li a {
+	padding: 0 10px;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+img {
+	border: 0;
+}
+
+
+.header {
+	padding-top: 80px;
+	height: 130px;
+	font-family: Recta-Regular, sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+	letter-spacing: .1em;
+	position: relative;
+}
+.header .logo {
+	width: 285px;
+}
+.topMenu {
+	font-family: "Aldine721BT-Light", Georgia, serif;
+	font-weight: normal;
+	font-size: 18px;
+	position: absolute;
+	top: 90px;
+	right: 0;
+}
+.topMenu a:hover,
+.topMenu ._active {
+	border-bottom: 3px solid #fffab9;
+}
+.topMenu .activeLine {
+	display: block;
+	height: 100%;
+	position: absolute;
+	height: 3px;
+	background: #000000;
+/*	background: black; */
+	top: 22px;
+}
+
+
+.footer {
+	padding: 30px 0 50px;
+	text-align: center;
+	width: 100%;
+	display: block;
+	font-size: 16px;
+	font-family: Recta-Regular, sans-serif;
+	font-weight: normal;
+	letter-spacing: .1em;
+}
+.footer b, .footer strong {
+	font-family: Recta-Bold, sans-serif;
+	font-weight: normal;
+}
+
+/* Work */
+.wrap,
+.entry {
+	float: left;
+	display: block;
+	position: relative;
+	font-family: Recta-Bold, sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+}
+.entry {
+	margin-bottom: 20px;
+}
+.wrap.big {
+	width: 630px;
+	margin-right: 20px;
+}
+.wrap.small {
+	width: 310px;
+}
+.big.entry {
+	width: 630px;
+	height: 360px;
+}
+.small.entry {
+	width: 310px;
+	height: 233px;
+}
+.portrait.entry {
+	width: 310px;
+	height: 360px;
+}
+.entry.pos_,
+.entry.pos_1,
+.entry.pos_5,
+.entry.pos_7 {
+	margin-right: 20px;
+}
+.entry.pos_ {
+	margin-bottom: 19px;
+}
+.entry .title {
+	display: block;
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	width: 100%;
+	z-index: 20;
+}
+.entry .title span {
+	border-bottom: 1px solid #555;
+}
+.entry .hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #2ee8bb; <!--Аквамарин-->
+	z-index: 10;
+	display: none;
+}
+.entry:hover .hover {
+	display: block;
+}
+._touch .entry:hover .hover {
+	display: none;
+}
+.entry .hover .text {
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	left: 0;
+	width: 100%;
+}
+
+/* Single work */
+.column {
+	float: left;
+	width: 310px;
+	margin-right: 20px;
+	font-size: 15px;
+	font-family: "Aldine721BT-Light", Georgia, serif;
+	font-weight: normal;
+	line-height: 1.45em;
+}
+.small.column {
+	width: 140px;
+	font-size: 13px;
+	font-family: Recta-Regular, sans-serif;
+	font-weight: normal;
+	line-height: 1.45em;
+}
+.last.column {
+	margin-right: 0;
+}
+.column h2,
+.column .title {
+	font-family: Recta-Bold, sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	letter-spacing: .1em;
+	display: block;
+	width: 100%;
+	border-bottom: 3px solid #fffab9;
+	padding: 0 0 3px 0;
+	margin: 20px 0 10px;
+}
+
+.work .gallery {
+	width: 100%;
+	position: relative;
+}
+.work .gallery img {
+	margin: 0 auto;
+	display: block;
+}
+.work .thumbs {
+	margin-left: -10px;
+	overflow: hidden;
+}
+.work .thumbs a {
+	display: block;
+	float: left;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	width: 70px;
+	height: 70px;
+	position: relative;
+}
+.work .thumbs .hover {
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: #9500a8; <!--фиолет-->
+	position: absolute;
+	top: 0;
+	left: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+	display: none;
+}
+.work .thumbs a._active .hover,
+.work .thumbs a:hover .hover {
+	display: block;
+}
+._touch .thumbs a:hover .hover {
+	display: none;
+}
+.work .single {
+	position: relative;
+}
+
+.work .text {
+	padding-bottom: 50px;
+}
+
+.galleryOverlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	left: 0;
+}
+._touch .galleryOverlay {
+	display: none;
+}
+.galleryOverlay .right,
+.galleryOverlay .left {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	cursor: pointer;
+}
+.galleryOverlay .right {
+	left: 60%;
+	right: 0;
+}
+.galleryOverlay .left {
+	left: 0;
+	right: 60%;
+}
+.galleryOverlay .inner {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 60%;
+}
+.galleryOverlay .left .inner {
+	left: 0px;
+}
+.galleryOverlay .right .inner {
+	right: 0px;
+}
+.galleryOverlay .cursor {
+	width: 50px;
+	height: 50px;
+	background: url(/graphics/piler.png);
+	position: absolute;
+	top: 50%;
+	margin-top: -35px;
+	display: none;
+}
+.galleryOverlay .left .cursor {
+	left: 40px;
+}
+.galleryOverlay .right .cursor {
+	right: 40px;
+	background-position: -50px 0;
+}
+.ie .galleryOverlay, .ie .galleryOverlay .left, .ie .galleryOverlay .right {
+	background: url(/is/graphics/primitives/transparent.png);
+}
+
+/* Back-link */
+.bottom {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+.bottom .back {
+	display: inline-block;
+	padding: 10px 15px;
+	background: #a80000; <!--кроваво красный-->
+	color: black;
+}
+
+/* About */
+.about {
+	overflow: hidden;
+}
+.about .left {
+	width: 630px;
+	margin-right: 20px;
+	float: left;
+}
+.about .right {
+	width: 310px;
+	float: left;
+}
+.about .textboxes {
+	margin-left: -10px;
+}
+.about .listItem {
+	width: 150px;
+	float: left;
+	margin-left: 10px;
+	font-family: Recta-Regular, sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+	letter-spacing: .1em;
+	line-height: 1.45em;
+	text-align: center;
+}
+.about .listItem.no_ {
+	clear: left;
+}
+.about p {
+	margin-top: 0;
+}
+h2 {
+	font-family: Recta-Bold, sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	display: block;
+	text-align: center;
+	border-bottom: 3px solid white;
+}
+
+
+/* News */
+.news .list {
+	margin-left: -60px;
+	overflow: hidden;
+}
+.news .item {
+	margin-left: 60px;
+	padding-bottom: 80px;
+	width: 280px;
+	float: left;
+}
+.news .item.no_ {
+	clear: left;
+}
+.news .item .title {
+	font-family: Recta-Bold, sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	text-decoration: underline;
+	margin-top: 15px;
+	line-height: 1.45em;
+}
+.news .item .title,
+.news .item .date {
+	text-align: center;
+	width: 100%;
+	display: block;
+}
+.news .item .date {
+	font-family: Recta-Regular, sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+	letter-spacing: .1em;
+	line-height: 1em;
+}
+
+.news .browseLine {
+	overflow: hidden;
+	width: 100%;
+}
+.news .browseLine .link {
+	display: block;
+	line-height: 51px;
+}
+.news .browseLine .prev.link {
+	float: left;
+}
+.news .browseLine .next.link {
+	float: right;
+}
+.news .pil {
+	background: url(/graphics/pilerWhite.png);
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	width: 51px;
+	height: 51px;
+}
+.news .pil.left {
+	margin-right: 20px;
+	float: left;
+}
+.news .pil.right {
+	margin-left: 20px;
+	background-position: -50px 0;
+	float: right;
+}
